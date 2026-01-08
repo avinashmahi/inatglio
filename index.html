@@ -2,32 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inatglio App</title>
+    <title>Inatglio Dynamic App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>🚀 Inatglio Application</h1>
-    <p>Dummy Web Application deployed using</p>
+    <h1>🚀 Inatglio Dynamic Application</h1>
 
-    <ul>
-        <li>GitHub</li>
-        <li>Jenkins (Freestyle Job)</li>
-        <li>Ansible</li>
-        <li>AWS EC2</li>
-    </ul>
+    <p class="subtitle">
+        Deployed using Jenkins + Ansible on AWS
+    </p>
 
-    <div class="info">
-        <p><strong>Environment:</strong> Production</p>
-        <p><strong>Deployed By:</strong> Jenkins CI/CD</p>
-        <p><strong>Status:</strong> ✅ Running Successfully</p>
+    <div class="card">
+        <p><strong>Status:</strong> <span id="status">Running</span></p>
+        <p><strong>Deployed At:</strong> <span id="time"></span></p>
+        <p><strong>Build Version:</strong> <span id="build">v1.0</span></p>
     </div>
 
+    <button onclick="changeStatus()">Change Status</button>
+
     <footer>
-        <p>© 2026 Inatglio | DevOps Demo Project</p>
+        <p>© 2026 Inatglio | DevOps Demo</p>
     </footer>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
